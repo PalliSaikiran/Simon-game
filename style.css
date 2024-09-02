@@ -1,0 +1,62 @@
+body {
+    background-color: rgb(220, 235, 248);
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.headings {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.btn-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.box {
+    height: 200px;
+    width: 200px;
+    border-radius: 20%;
+    border: 5px solid black;
+    margin: 0.7rem;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+
+.box:hover {
+    transform: scale(1.1);
+}
+
+.red {
+    background-color: crimson;
+}
+
+.blue {
+    background-color: rgb(24, 24, 116);
+}
+
+.green {
+    background-color: rgb(28, 104, 28);
+}
+
+.pink {
+    background-color: rgb(228, 114, 133);
+}
+
+.gameFlash, .userFlash {
+    animation: flash 0.5s ease-in-out;
+}
+
+@keyframes flash {
+    0% { opacity: 1; }
+    50% { opacity: 0.5; }
+    100% { opacity: 1; }
+}
